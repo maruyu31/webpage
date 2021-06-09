@@ -33,7 +33,7 @@ h2 {
 
 .text {
   text-align: center;
-  margin: 30px 0;
+  margin: 30px auto;
 }
 
 header {
@@ -56,7 +56,7 @@ nav {
   margin-right: auto;
 }
 
-.header-logo > img {
+.header-logo img {
   height: 70px;
 }
 
@@ -112,7 +112,6 @@ nav {
 }
 
 .portfolio-image {
-  width: 920px;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 90px;
@@ -313,4 +312,140 @@ footer {
 .footer-text {
   font-size: 16px;
   color: #fafafa;
+}
+
+/* レスポンシブ */
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 50px;
+  }
+
+  .header-logo img {
+    height: 50px;
+  }
+
+  nav {
+    width: 90%;
+    height: 50px;
+  }
+
+  .hm-icon {
+    margin: 5px 0;
+    border: solid 1px #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+  }
+
+  .nav-list-trigger i {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  /* main-visual */
+
+  .main-visual {
+    background-image: url(img/code.png);
+    background-size: cover;
+  }
+
+  .main-visual-content {
+    width: 90%;
+  }
+
+  .main-visual-content h1 {
+    font-size: 40px;
+  }
+
+  .main-visual-content p {
+    font-size: 18px;
+  }
+
+  /* portfolio */
+
+  .portfolio-content {
+    width: 90%;
+  }
+
+  .portfolio-image {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .portfolio-image-item:nth-child(odd) {
+    display: none;
+  }
+
+  .portfolio-image-item:nth-child(even) {
+    margin-bottom: 10px;
+  }
+
+  .portfolio-image-item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* feature */
+
+  .feature-content {
+    width: 90%;
+  }
+
+  .feature-strength {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .strength {
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  .strength i:last-child {
+    margin-bottom: 0;
+  }
+
+  /* profile */
+
+  .profile-content {
+    width: 90%;
+  }
+
+  .myprofile {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    margin-bottom: 20px;
+  }
+
+  .profile-introduction {
+    text-align: center;
+  }
+
+  /* contact */
+
+  .contact-content {
+    width: 90%;
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .phone {
+    text-align: center;
+  }
+
+  .sns {
+    text-align: center;
+  }
+
+  .sns h2 {
+    padding-top: 20px;
+  }
 }
